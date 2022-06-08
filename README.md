@@ -12,10 +12,8 @@ I am using multiple linear regression only (it is the plan to try it with differ
 The results on the test data were an R_squared of 94,8%.
 
 4.	The interface
-Next part of the project was making an interface, where you can write in your car’s details and it will tell you it’s worth and also it will tell you some other interesting facts, such as how many similar*cars is on the Hungarian used car market, also how much of those average price, furthermore it can tell you interesting facts about the explaining variables which you have given.
+Next part of the project was making an interface, where you can write in your car’s details and it will tell you it’s worth and also it will tell you some other interesting facts, such as how many similar cars are on the Hungarian used car market, also how much is their average price, furthermore it can tell you interesting facts about the details which you have given.
 I made this interface with python’s tkinter library
-
-
 
 Important notes:
 -	The prices were predicted based on the Hungarian market and it’s prices, so it may not be accurate for other countries
