@@ -17,7 +17,7 @@ I made this interface with python’s tkinter library
 
 Important notes:
 -	The prices were predicted based on the Hungarian market and it’s prices, so it may not be accurate for other countries
--	In the code the variable names are mainly written in Hungarian, 
+-	In the code and in on the interface the car details are mainly written in Hungarian 
 
 Currently working on:
 -	Handling the missing values differently
