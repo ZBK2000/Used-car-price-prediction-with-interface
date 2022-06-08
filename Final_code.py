@@ -136,7 +136,7 @@ def take_inputs():
 
 # _____________________________________ pandas stuff __________________________________________________
 # In this block data was cleaned regarding unneceseary spaces, letters and making datatypes right
-data = pd.read_csv('jarmuvek1.csv')
+data = pd.read_csv('used_car_database.csv')
 data.drop(list(data.loc[data["Évjárat:"] == "Évjárat:"].index), inplace=True)
 data["Vételár:"].replace(["\xa0", "Ft"], "", regex=True, inplace=True)
 data["Vételár EUR:"].replace(["\xa0", "€"], "", regex=True, inplace=True)
