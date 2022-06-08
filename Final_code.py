@@ -60,7 +60,7 @@ def take_inputs():
             if Param.get():  # this parameter sets the plus-minus filtering range of the numerical values
                 x = float(Param.get())
             else:
-                x = 0.05
+                x = 5
             try:  # this block takes the categorical values from the users input and filter the database accordingly
                 data1 = data2[label].value_counts(normalize=True)[entry.get()]
                 text += f"{str(format(float(data1) * 100, '.2f'))} percentage of the cars has the '{entry.get()}' " \
@@ -87,11 +87,11 @@ def take_inputs():
                             f"percent of the cars are in the {x * 100} percent range of {entry.get()}\n------------------\n"
 
                     if b == 0:
-                        sliced_df = data2[(data2[label] > (1 - x) * float(entry.get())) & (
-                                    data2[label] < (1 + x) * float(entry.get()))]
+                        sliced_df = data2[(data2[label] > (1 - 0.01*x) * float(entry.get())) & (
+                                    data2[label] < (1 + 0.01*x) * float(entry.get()))]
                     else:
-                        sliced_df = sliced_df[(sliced_df[label] > (1 - x) * float(entry.get())) & (
-                                    sliced_df[label] < (1 + x) * float(entry.get()))]
+                        sliced_df = sliced_df[(sliced_df[label] > (1 - 0.01*x) * float(entry.get())) & (
+                                    sliced_df[label] < (1 + 0.01*x) * float(entry.get()))]
                 input_values.append(float(entry.get()))
                 label_values.append(label)
                 label_values_without_dummys.append(label)
